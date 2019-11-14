@@ -1,89 +1,71 @@
+import java.io.*;
 import java.util.Scanner;
 
-import javafx.scene.paint.Stop;
-
-class l4p3 {
-    public static void main(String args[]) {
+class l5p2 {
+    public static void main(String args[]) throws IOException {
         Scanner in = new Scanner(System.in);
+        int startchar = 42069;
+        int firstchar = 42069;
+        int endchar = 0;
+        char mychar = 0;
+        int bruh = 1;
+        String letter;
+    
+        
 
-        boolean ok = true;
-        int input = 1;
-        String input1;
-        double divider;
-        double sum = 0;
-        int counter = 0;
-
-        System.out.println("Hello and welcome to my reciprocal adding maching");
-        System.out.println("Please enter your first number");
-        input = in.nextInt();
-        divider = input;
-        counter++;
-        System.out.println(+input);
-
-        while(counter < 10)
-        {
-            if(input == 0)
-            {
-                System.out.println("Are you sure you want to stop? Please enter yes to stop or no to continue");
-                input1 = in.next();
-                    if (input1.contains("yes"))
-                    {
-                        input = -1;
-                        System.out.println("Your sum is " + sum);
-                    }
-                    if(input1.contains("no"))
-                    {
-                      input = -1;
-                        ok = true;
-                       counter--;
-                       System.out.println("Please enter your next number");
-                       input = in.nextInt();
-                       divider = input;
-                       counter++;
-                    }
+        System.out.println("Please enter your start character");
+        startchar = System.in.read();
+    
+        while (bruh != 1){
+            if (startchar > 32){
+                System.out.println(+startchar);
+                mychar = (char) startchar;
+                bruh = 1;
             }
-            
-            if(input > 0){
-                if(counter == 9){  
-                    counter++;
-                    System.out.println("Please enter your 10th and last number");
-                    input = in.nextInt();
-                    if(input == 0)
-                    {
-                        System.out.println("Are you sure you want to stop? Please enter yes to stop or no to continue");
-                        input1 = in.next();
-                            if (input1.contains("yes"))
-                            {
-                                input = -1;
-                                System.out.println("Your sum is " + sum);
-                            }
-                            if(input1.contains("no"))
-                            {
-                              input = -1;
-                                ok = true;
-                               counter--;
-                               System.out.println("Please enter your next number");
-                               input = in.nextInt();
-                               divider = input;
-                               counter++;
-                             }
-                     }else{
-                         divider = input;
-                        sum = sum + (1 / divider);
-                        System.out.println(+sum);
-                        counter++;
-                        }
-                }else{
-                     sum = sum + (1 / divider);
-                     System.out.println(+sum);
-                     System.out.println("Please enter your next number");
-                     input = in.nextInt();
-                     divider = input;
-                     }
-              }
+        }
+        System.out.println(+startchar);
+
+        System.out.println("Please enter your end character");
+        while (bruh != 1){
+            if (endchar < 32){
+                continue;
+            }else{
+            endchar = System.in.read();
+            }
          }
-     }
+
+        while (bruh != 1){
+            if (endchar > 32){
+            System.out.println(+endchar);
+            mychar = (char) endchar;
+            bruh = 1;
+         }
+    }
+    System.out.println(+endchar);
+}
 }
 
-                    
-            
+
+
+        
+       
+
+
+
+       //  if (System.in.read() < 33){
+           //  while (endchar < 33){
+            //    continue;
+            // }
+         //}else{
+           //  System.out.println("Please enter you end character");
+        // }
+
+        // System.out.print(+startchar);
+        // System.out.print(+endchar);
+
+       //  for (startchar = startchar; startchar == endchar; startchar--) {
+        //    mychar = (char) startchar;
+       //     System.out.print(+mychar+ ", ");
+       //  }
+    // }
+//}

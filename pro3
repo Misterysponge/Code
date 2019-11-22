@@ -1,0 +1,90 @@
+import java.io.*;
+import java.util.Random;
+import java.util.Scanner;
+
+import javax.lang.model.util.ElementScanner6;
+
+class test {
+    public static void main(String args[]) throws IOException {
+        Scanner in = new Scanner(System.in);
+        int inp = 0;
+        int i = 0;
+        int inp1 = 0;
+        int inp2 = 0;;
+        int power = 0;
+        int base = 10;
+        int powered = 0;
+        int consent = 0;
+        int counter = 1;
+        int other = 1;
+        int negative = 0;
+
+         // declares an Array of integers. 
+      //int[] arr; 
+          
+      // allocating memory for 5 integers. 
+      int arr[] = new int[15]; 
+
+      System.out.println("bruh");
+          
+      // initialize the first elements of the array 
+
+          
+      // initialize the second elements of the array 
+     // arr[1] = 20; 
+          
+      //so on... 
+     // arr[2] = 30; 
+     // arr[3] = 40; 
+      //arr[4] = 50; 
+          
+      // accessing the elements of the specified array 
+     
+      
+      for (i = 0; i > 0; i++) {
+        if (inp > 47){ 
+        inp = System.in.read();
+         arr[i] = inp - 48;
+         System.out.println("Element at index " + i + " : "+ arr[i]);
+         counter++; 
+         other++;
+        }
+         if (input == 45){
+             arr[i] = -1;
+         }
+         if (input == 32){
+             arr[i] = 420;
+         }
+         if (input == 13) {
+             while (number < 16) {
+                 arr[i] = 69;
+                 
+             }
+         }
+
+
+    }
+
+        System.out.println("counter: "+counter);
+    
+    power = counter;
+
+    while(power != 0){
+        powered = base * base;
+        power--;
+    }
+     
+    for (i = 0; i < counter; i++) {
+        inp1 = arr[i] * powered;
+        powered = powered / 10;
+
+         
+     }
+
+     System.out.println(inp1);
+
+
+
+
+}
+}

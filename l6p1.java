@@ -48,3 +48,28 @@ class num {
   
 
 }}
+
+
+        //goal: 
+        // 4
+        // 3   3   
+        // 2   2   2      
+        // 1   1   1   1   
+
+        //description
+        //for columns, should start at 1 until counter is equal to input (this should be one while or for or if statement)
+        //for the data in each row of like columns, should be another counter that starts as the input, then outputs tab (char of ascii number)...
+        //... and repeats itself by the same number of times as the first counter (but should still be a different counter probably)
+        //then, everything previously stated should be ended by the equivalent of enter and reaped by another counter that...
+        //... also starts as the same number as the input and then ends when equal to zero
+
+        int height = 0;
+        int width = 0;
+        int volume = 0;
+        int inp = 0;
+        (char) tab = 9;
+        int enter1 = 10;
+        int enter2 = 13;
+        int row = 0;
+        int counter = 1;
+        int countset = 0;

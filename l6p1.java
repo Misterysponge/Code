@@ -73,3 +73,57 @@ class num {
         int row = 0;
         int counter = 1;
         int countset = 0;
+
+import java.io.*;
+import java.util.Random;
+import java.util.Scanner;
+import java.io.IOException;
+
+class l6p2 {//1
+    public static void main(String args[]) throws IOException {//2
+        Scanner in = new Scanner(System.in);
+
+              //goal: 
+        // 4
+        // 3   3   
+        // 2   2   2      
+        // 1   1   1   1   
+
+        //description
+        //for columns, should start at 1 until counter is equal to input (this should be one while or for or if statement)
+        //for the data in each row of like columns, should be another counter that starts as the input, then outputs tab (char of ascii number)...
+        //... and repeats itself by the same number of times as the first counter (but should still be a different counter probably)
+        //then, everything previously stated should be ended by the equivalent of enter and reaped by another counter that...
+        //... also starts as the same number as the input and then ends when equal to zero
+
+        int height = 0;
+        int width = 0;
+        int volume = 0;
+        int inp = 0;
+        char tab = 9;
+        int enter1 = 10;
+        int enter2 = 13;
+        int row = 1;
+        int counter = 1;
+        int counterset = 2;
+
+        System.out.println("Please enter your number");
+        inp = System.in.read();
+        inp = inp - 48;
+        counterset = inp;
+        height = inp + 1;
+
+        while(inp > 0){
+            while (counter > 0){
+                System.out.println(inp+"       ");
+                counter--;
+            }
+            System.out.print(System.lineSeparator());
+            inp--;
+            counter = counterset;
+            counterset++;
+        }
+
+
+    }//2
+}//1

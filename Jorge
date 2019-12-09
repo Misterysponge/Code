@@ -1,0 +1,38 @@
+	public static void Five () {
+		int number = 0, input = 0, prime = 0, counter = 0;
+		
+		System.out.println("which prime number would you like? ");
+		
+		input = getMeanInt();
+		int box [] = new int [input];
+		
+		box [0] = 2;
+		
+		for (prime = 3; prime > counter; prime++){
+			
+			for (number = counter; number > -1; number--){
+				
+				if (prime % box [number] == 0)
+					number = -1;
+			
+			}
+			
+			if (number == -1){
+				
+				System.out.print("	" + box [counter]);
+				counter++;
+				box [counter] = prime;
+			}
+				
+			if (box [(input-1)] > 0)
+				counter = prime + 2;
+		
+			
+		}
+		
+		number = input - 1;
+		
+		System.out.println("The " + input + "th prime number is " + box [number]);
+	}
+
+}//class

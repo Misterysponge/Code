@@ -195,14 +195,19 @@ class l6p6 {//1
            }else{
                 if(inp2 == 1){
                     counter++;
-                    test++;
-                    inp2 = test - 1;
+                    if(counter = inp){
+                        System.out.println("Your prime number is: " + test);
+                    }else{
+                         test++;
+                         inp2 = test - 1;
+                    }
                  }else{ 
                       test++;
                       inp2 = test - 1;
-                  }
+                 }
             }
-       }
+       }         
+   }
 }
 
 class l6p6 {//1

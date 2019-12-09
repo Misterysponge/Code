@@ -207,6 +207,48 @@ class l6p6 {//1
    }
 }
 
+
+class l6p6 {//1
+    public static void main(String args[]) throws IOException {//2
+        Scanner in = new Scanner(System.in);
+        int inp = 0;
+        int test = 3;
+        int counter = 1;
+        int inp2 = 2;
+
+        System.out.println("Please enter the number prime you want to have outputed");
+        inp = in.nextInt();
+
+       while (counter != inp){
+           if ((test % inp2) > 0){
+               inp2--;
+          }else{
+                if(inp2 == 1){
+                    counter++;
+                    if(counter = inp){
+                        if(counter = 2){
+                            System.out.println("The 2nd prime number is " + test);
+                        }
+                        if(counter = 3){
+                            System.out.println("The 3rd prime number is " + test);
+                        }
+                        if (counter > 3){
+                            System.out.println("The " + counter + "th prime number is " +test);
+                        }
+                    }else{
+                         test++;
+                         inp2 = test - 1;
+                    }
+                 }else{ 
+                      test++;
+                      inp2 = test - 1;
+                 }
+            }
+       }         
+   }
+}
+
+
 class l6p6 {//1
     public static void main(String args[]) throws IOException {//2
         Scanner in = new Scanner(System.in);

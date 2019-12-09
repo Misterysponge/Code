@@ -180,6 +180,36 @@ class l6p6 {//1
         Scanner in = new Scanner(System.in);
         int inp = 0;
         int p = 0;
+        int test = 3;
+        int consent = 1;
+        int counter = 1;
+        int inp2 = 2;
+        int testing = 0;
+
+        System.out.println("Please enter the number prime you want to have outputed");
+        inp = in.nextInt();
+
+       while (counter != inp){
+           if ((test % inp2) > 0){
+               inp2--;
+           }else{
+                if(inp2 == 1){
+                    counter++;
+                    test++;
+                    inp2 = test - 1;
+                 }else{ 
+                      test++;
+                      inp2 = test - 1;
+                  }
+            }
+       }
+}
+
+class l6p6 {//1
+    public static void main(String args[]) throws IOException {//2
+        Scanner in = new Scanner(System.in);
+        int inp = 0;
+        int p = 0;
         int test = 0;
         int consent = 1;
         int counter = 0;

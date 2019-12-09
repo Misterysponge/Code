@@ -50,31 +50,7 @@ class num {
 }}
 
 
-        //goal: 
-        // 4
-        // 3   3   
-        // 2   2   2      
-        // 1   1   1   1   
-
-        //description
-        //for columns, should start at 1 until counter is equal to input (this should be one while or for or if statement)
-        //for the data in each row of like columns, should be another counter that starts as the input, then outputs tab (char of ascii number)...
-        //... and repeats itself by the same number of times as the first counter (but should still be a different counter probably)
-        //then, everything previously stated should be ended by the equivalent of enter and reaped by another counter that...
-        //... also starts as the same number as the input and then ends when equal to zero
-
-        int height = 0;
-        int width = 0;
-        int volume = 0;
-        int inp = 0;
-        (char) tab = 9;
-        int enter1 = 10;
-        int enter2 = 13;
-        int row = 0;
-        int counter = 1;
-        int countset = 0;
-
-import java.io.*;
+      import java.io.*;
 import java.util.Random;
 import java.util.Scanner;
 import java.io.IOException;
@@ -82,44 +58,21 @@ import java.io.IOException;
 class l6p2 {//1
     public static void main(String args[]) throws IOException {//2
         Scanner in = new Scanner(System.in);
-
-              //goal: 
-        // 4
-        // 3   3   
-        // 2   2   2      
-        // 1   1   1   1   
-
-        //description
-        //for columns, should start at 1 until counter is equal to input (this should be one while or for or if statement)
-        //for the data in each row of like columns, should be another counter that starts as the input, then outputs tab (char of ascii number)...
-        //... and repeats itself by the same number of times as the first counter (but should still be a different counter probably)
-        //then, everything previously stated should be ended by the equivalent of enter and reaped by another counter that...
-        //... also starts as the same number as the input and then ends when equal to zero
-
-        int height = 0;
-        int width = 0;
-        int volume = 0;
         int inp = 0;
-        char tab = 9;
-        int enter1 = 10;
-        int enter2 = 13;
-        int row = 1;
         int counter = 1;
         int counterset = 2;
 
         System.out.println("Please enter your number");
         inp = System.in.read();
         inp = inp - 48;
-        counterset = inp;
-        height = inp + 1;
 
         while(inp > 0){
             while (counter > 0){
-                System.out.println(inp+"       ");
+                System.out.print(inp+"       ");
                 counter--;
             }
-            System.out.print(System.lineSeparator());
             inp--;
+            System.out.print(System.lineSeparator());
             counter = counterset;
             counterset++;
         }
@@ -127,3 +80,138 @@ class l6p2 {//1
 
     }//2
 }//1
+
+import java.io.*;
+import java.util.Random;
+import java.util.Scanner;
+import java.io.IOException;
+
+class l6p3 {//1
+    public static void main(String args[]) throws IOException {//2
+        Scanner in = new Scanner(System.in);
+        int h = 0;
+        int w = 0;
+        int ch = 0;
+        int cw = 0;
+        int f = 0;
+
+        System.out.println("Please enter the height of your rectangle");
+        h = in.nextInt() - 1;
+        ch = h - 1;
+        System.out.println("Please enter the width of your rectangle");
+        w = in.nextInt();
+        cw = w;
+        f = w - 2;
+
+        while (cw > 0){
+            System.out.print("*");
+            cw--;
+        }
+        cw = w;
+       
+        
+        while (ch > 0){   
+        System.out.print(System.lineSeparator());
+        System.out.print("*");
+            while(f > 0){
+                System.out.print(" ");
+                f--;
+            }
+            if (w > 1){
+            System.out.print("*");
+            }
+        f = w - 2;
+        ch--;
+        }
+        if(h > 1){
+            System.out.print(System.lineSeparator());
+            while (cw > 0){
+                System.out.print("*");
+                cw--;
+            }
+        }
+    }
+}
+
+import java.io.*;
+import java.util.Random;
+import java.util.Scanner;
+import java.io.IOException;
+
+class l6p4 {//1
+    public static void main(String args[]) throws IOException {//2
+        Scanner in = new Scanner(System.in);
+        int inp = 0;
+        int c = 1;
+        int f = 0;
+        int i = 1;
+
+        System.out.println("Please enter your number");
+        inp = in.nextInt();
+
+        System.out.print(i + "! = " + i + " = " + i);
+        c++;
+        i = c;
+        System.out.print(System.lineSeparator());
+      
+        while(c < (inp + 1)){
+            System.out.print(i + "! = "); 
+            while (i > 1){
+                System.out.print(i + " x " + (i - 1));
+                i--;
+            }
+            System.out.print(" = " + (c * (c - 1) * (c - 1)));
+            System.out.print(System.lineSeparator());
+            c++;
+            i = c;
+        }
+
+
+    }
+}
+
+import java.io.*;
+import java.util.Random;
+import java.util.Scanner;
+import java.io.IOException;
+
+class l6p6 {//1
+    public static void main(String args[]) throws IOException {//2
+        Scanner in = new Scanner(System.in);
+        int inp = 0;
+        int p = 0;
+        int test = 0;
+        int consent = 1;
+        int counter = 0;
+        int inp2 = 0;
+
+        System.out.println("Please enter the number prime you want to have outputed");
+        inp = in.nextInt();
+        test = inp - 1;
+        inp2 = inp; 
+
+       while (counter < inp){
+            while(consent == 1){
+                while (test > 1){
+                    if ((inp2 % test) > 0){
+                        test--;
+                    }else{
+                        System.out.println(inp2 + " is a prime number and consent is" + consent);
+                        counter++;
+                        consent = 0;
+                    }
+                }
+                consent =  0;
+            }
+            System.out.println(inp + " is NOT a prime number");
+        }
+        
+        System.out.println("Your number is " + inp2 );
+
+    
+
+
+
+
+    }
+}

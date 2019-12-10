@@ -289,3 +289,111 @@ class l6p6 {//1
 
     }
 }
+
+
+import java.io.*;
+import java.util.Random;
+import java.util.Scanner;
+import java.io.IOException;
+
+class l7p2 {//1
+    public static void main(String args[]) throws IOException {//2
+        Scanner in = new Scanner(System.in);
+        int inp = 0;
+        int inpp = 0;
+        int test = 0;
+        int counter = 0;
+        int inp2 = 2;
+        int min = 0;
+        int max = 0;
+
+        System.out.println("Please enter the first number prime you want to have outputed");
+        inp = in.nextInt();
+        System.out.println("Please enter the second number prime you want to have outputed");
+        inpp = in.nextInt();
+
+        if(inp > inpp){
+            max = inp;
+            min = inpp;
+        }else{
+            max = inpp;
+            min = inp;
+        }
+        inp2 = min - 1;
+    
+
+       while (min != (max + 1)){
+           if ((min % inp2) > 0){
+               inp2--;
+          }else{
+                if(inp2 == 1){
+                    System.out.print(min );
+                    min++;
+                    inp2 = min - 1;
+                 }else{ 
+                      min++;
+                      inp2 = min - 1;
+                 }
+            }
+       }         
+   }
+}
+
+
+import java.io.*;
+import java.util.Random;
+import java.util.Scanner;
+import java.io.IOException;
+
+class l7p2 {//1
+    public static void main(String args[]) throws IOException {//2
+        Scanner in = new Scanner(System.in);
+        int inp = 0;
+        int inpp = 0;
+        int test = 0;
+        int counter = 0;
+        int inp2 = 2;
+        int min = 0;
+        int max = 0;
+
+        System.out.println("Please enter your number");
+        inp = in.nextInt();
+
+        import java.io.*;
+import java.util.Random;
+import java.util.Scanner;
+import java.io.IOException;
+
+class l6p6 {//1
+    public static void main(String args[]) throws IOException {//2
+        Scanner in = new Scanner(System.in);
+        int inp = 0;
+        int test = 3;
+        int counter = 1;
+        int inp2 = 2;
+        int total = 1;
+
+        System.out.println("Please enter the number prime you want to have outputed");
+        inp = in.nextInt();
+
+       while (total != inp){
+           if ((test % inp2) > 0){
+               inp2--;
+          }else{
+                if(inp2 == 1){
+                    if (inp % test = 0){
+                        total = total * test;
+                        System.out.print(test);
+                    }
+
+                 }else{ 
+                      test++;
+                      inp2 = test - 1;
+                 }
+            }
+       }         
+   }
+}
+    }
+
+        

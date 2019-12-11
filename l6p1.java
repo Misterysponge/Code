@@ -404,18 +404,20 @@ class l6p6 {//1
         int test = 2;
         int inp2 = 1;
         int total = 1;
+        int boundary = 0;
 
         System.out.println("Please enter the number prime you want to have outputed");
         inp = in.nextInt();
+        boudary = inp;
 
-       while (total < inp){
+       while (total < boundary){
            if ((test % inp2) > 0){
                inp2--;
           }else{
                 if(inp2 == 1){
-                    while (input % test = 0){
+                    while (inp % test = 0){
                         System.out.print(test);
-                     total = total * (input % test);
+                     total = total * test;
                     }
                     test++;
                     inp2 = test - 1;
@@ -427,4 +429,34 @@ class l6p6 {//1
        }         
    }
 }
+    
+        import java.io.*;
+import java.util.Random;
+import java.util.Scanner;
+import java.io.IOException;
+
+class l6p6 {//1
+    public static void main(String args[]) throws IOException {//2
+        Scanner in = new Scanner(System.in);
+        int inp = 0;
+        int boundary = 0;
+        int test = 2;
+        int total = 1;
+        
+        System.out.println("Please enter your number");
+        inp = in.nextInt();
+        boundary = inp;
+        
+        while (total < boundary){
+            while (inp % test = 0){
+                System.out.print(test);
+                total = total * test;
+            }
+            test ++;
+        }
+        
+    }
+}
+        
+    
     
